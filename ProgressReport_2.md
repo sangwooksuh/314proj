@@ -54,9 +54,7 @@ Group members: Kevin Yan, Sangwook Suh
 
 **As a** traveller looking for short term housing
 
-
 **I want to** know Airbnb housing prices in the area I am visiting,
-
 
 **so that** I can judge whether a property is reasonably priced or not.
 
