@@ -1,5 +1,3 @@
-# 314proj
-
 # Progress Report 1
 
 
