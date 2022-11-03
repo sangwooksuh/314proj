@@ -1,1 +1,4 @@
-site_name: My Docs
+site_name: AirBnB Scraping Analysis
+
+#theme: readthedocs
+theme: bootstrap386
