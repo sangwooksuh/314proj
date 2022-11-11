@@ -6,7 +6,7 @@ Group members: Kevin Yan, Sangwook Suh
 ## Title: Web Scraping
 
 
-**As a** traveller looking for short term housing
+**As a** traveller looking for short term housing,
 
 **I want to** know Airbnb housing prices in the area I am visiting,
 
@@ -52,83 +52,83 @@ Group members: Kevin Yan, Sangwook Suh
 
 ### Scenario 1: Data should be normalized
 
-**Given** freshly-scraped data
+**Given** freshly-scraped data,
 
 
-**and** the data is very messy and unorganized
+**and** the data is very messy and unorganized,
 
 
-**when** the user uses the function
+**when** the user uses the function,
 
 
-**then** the data should be returned normalized
+**then** the data should be returned normalized.
 
 
 ### Scenario 2: Addresses should be standardized
 
 
-**Given** freshly-scraped data
+**Given** freshly-scraped data,
 
 
-**and** the addresses of the Airbnb’s are inconsistent
+**and** the addresses of the Airbnb’s are inconsistent,
 
 
-**when** the user uses this function
+**when** the user uses this function,
 
 
-**then** the addresses should be cleaned
+**then** the addresses should be cleaned,
 
 
-**and** standardized in a way so that they can all be analyzed
+**and** standardized in a way so that they can all be analyzed.
 
 
 ## Title: Data Visualization/Dashboarding
 
-**As a** traveler or data scientist interested in an accessible summary of Airbnb housing data
+**As a** traveler or data scientist interested in an accessible summary of Airbnb housing data,
 
-**I want** visualize certain features of the Airbnb houses
+**I want** visualize certain features of the Airbnb houses,
 
-**so that** I can understand trends in housing prices
+**so that** I can understand trends in housing prices.
 
 ### Scenario 1: Should be able to understand relationship between various features
 
-**Given** clean data of the Airbnb properties
+**Given** clean data of the Airbnb properties,
 
-**and** has certain features of interest
+**and** has certain features of interest,
 
-**when** the user selects the features of interest
+**when** the user selects the features of interest,
 
-**then** scatter plots showing the correlation of the the features should be visualized 
+**then** scatter plots showing the correlation of the the features should be visualized. 
 
 
 ### Scenario 2: Should be able to visualize prices of various houses
 
 
-**Given** cleaned data of the Airbnb houses
+**Given** cleaned data of the Airbnb houses,
 
 
-**and** the prices of the houses are cleaned
+**and** the prices of the houses are cleaned,
 
 
-**when** the user uses this function
+**when** the user uses this function,
 
 
-**then** the prices of all the houses should be visualized
+**then** the prices of all the houses should be visualized,
 
 
-**and** analyzable in a way to easily compare the prices of houses in a certain area
+**and** analyzable in a way to easily compare the prices of houses in a certain area.
 
 
 ### Scenario 3: Should be able to visualize predicted prices by change of a feature
 
 
-**Given** cleaned data of the Airbnb houses
+**Given** cleaned data of the Airbnb houses,
 
 
-**and** a feature of interest
+**and** a feature of interest,
 
 
-**when** the user uses this function
+**when** the user uses this function,
 
 
 **then** the scatterplot of feature vs price along with a plot of the linear model should be visualized.
