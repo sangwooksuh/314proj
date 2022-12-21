@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Visualizing - AirBnB Scraping Analysis</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Visualizing";
+        var mkdocs_page_input_path = "Visualizing.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> AirBnB Scraping Analysis
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Scraping/">Scraping</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Cleaning/">Cleaning</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Visualizing</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-scatterdf-feature1-feature2">1. scatter(df, feature1, feature2)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-prices_violin_plotdf">2. prices_violin_plot(df)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-predict_pricedf-feature-feature_val">3. predict_price(df, feature, feature_val)</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">AirBnB Scraping Analysis</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Visualizing</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="visualizing">Visualizing</h1>
+<p>To properly utilize this module, you will want to have already cleaned your dataframe.</p>
+<h2 id="1-scatterdf-feature1-feature2">1. scatter(df, feature1, feature2)</h2>
+<p>Takes a dataframe, and 2 of its columns/features, and plots a scatterplot between the two variables.</p>
+<table>
+<thead>
+<tr>
+<th>input</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>df</td>
+<td>DataFrame - Cleaned dataframe you want to scatter the data from</td>
+</tr>
+<tr>
+<td>feature1</td>
+<td>String - column name of feature you want to scatter, x-axis</td>
+</tr>
+<tr>
+<td>feature2</td>
+<td>String - other column name of feature you want to scatter, y-axis</td>
+</tr>
+</tbody>
+</table>
+<p><em>Example:</em> scatter(italy_df, "num_amenities", "price")</p>
+<h2 id="2-prices_violin_plotdf">2. prices_violin_plot(df)</h2>
+<p>Takes a dataframe, generates a violinplot to visualize the distribution of nightly prices</p>
+<table>
+<thead>
+<tr>
+<th>input</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>df</td>
+<td>DataFrame - Cleaned dataframe you want visualize the price with</td>
+</tr>
+</tbody>
+</table>
+<p><em>Example:</em> prices_violin_plot(italy_df)</p>
+<h2 id="3-predict_pricedf-feature-feature_val">3. predict_price(df, feature, feature_val)</h2>
+<p>Takes a dataframe, a feature to predict the price with, and the value of that feature.</p>
+<table>
+<thead>
+<tr>
+<th>input</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>df</td>
+<td>DataFrame - Cleaned dataframe you want to scatter the data from</td>
+</tr>
+<tr>
+<td>feature</td>
+<td>String - column name of feature you want to train Linear Regression model with</td>
+</tr>
+<tr>
+<td>val</td>
+<td>int/float - value of feature that you want the price to be predicted for</td>
+</tr>
+</tbody>
+</table>
+<p><em>Example:</em> predict_price(italy_df, "description_wordcount", 200)</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Cleaning/" class="btn btn-neutral float-left" title="Cleaning"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Cleaning/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
