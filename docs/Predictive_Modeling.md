@@ -1,6 +1,6 @@
 # Predictive Modeling
 
-Using functions from *Scraping* and *Cleaning* we provide a example analysis with KNN Regressor and Linear Regession Models, tuning different hyperparameters.
+Using functions from *Scraping* and *Cleaning* we provide a example analysis with KNN Regressor and Linear Regession Models, tuning different hyperparameters. This is presented as a Notebook intended to follow through according to the order written.
 
 ## 1. get_basic_XY(df)
 Takes a cleaned dataframe, takes only numerical columns, converts pandas datetime to ordinal integer variables for model input, and returns a features DataFrame X and a target column (price) Series y.
