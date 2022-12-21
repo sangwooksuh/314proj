@@ -1,0 +1,8 @@
+site_name: AirBnB Scraping Analysis
+
+theme: readthedocs
+
+nav:
+  - Scraping: "Scraping.md"
+  - Cleaning: "Cleaning.md"
+  - Visualizing: "Visualizing.md"
